@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -14,72 +15,72 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
   <style>
-    :root{
-      --primary:#ec4899;
-      --secondary:#111827;
-      --radius:12px;
+    :root {
+      --primary: #ec4899;
+      --secondary: #111827;
+      --radius: 12px;
     }
 
-    html{
-      scroll-behavior:smooth;
+    html {
+      scroll-behavior: smooth;
     }
 
-    body{
+    body {
       font-family: monospace;
-      background:#fff;
-      color:#111827;
+      background: #fff;
+      color: #111827;
     }
 
-    .glass{
-      background: rgba(255,255,255,0.65);
+    .glass {
+      background: rgba(255, 255, 255, 0.65);
       backdrop-filter: blur(12px);
     }
 
-    .gradient-text{
-      background: linear-gradient(90deg,var(--primary),#f472b6);
-      -webkit-background-clip:text;
-      -webkit-text-fill-color:transparent;
+    .gradient-text {
+      background: linear-gradient(90deg, var(--primary), #f472b6);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
 
-    .section-title{
-      font-size:2rem;
-      font-weight:700;
-      margin-bottom:1rem;
-      color:var(--secondary);
+    .section-title {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      color: var(--secondary);
     }
 
-    .btn-primary{
-      background:var(--primary);
-      color:white;
-      border-radius:var(--radius);
-      transition:.3s ease;
+    .btn-primary {
+      background: var(--primary);
+      color: white;
+      border-radius: var(--radius);
+      transition: .3s ease;
     }
 
-    .btn-primary:hover{
-      transform:translateY(-2px);
-      opacity:.92;
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      opacity: .92;
     }
 
-    .card{
-      border-radius:var(--radius);
-      background:white;
-      border:1px solid #f3f4f6;
-      transition:.3s ease;
+    .card {
+      border-radius: var(--radius);
+      background: white;
+      border: 1px solid #f3f4f6;
+      transition: .3s ease;
     }
 
-    .card:hover{
-      transform:translateY(-5px);
-      box-shadow:0 10px 30px rgba(0,0,0,0.08);
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
     }
 
-    .blob{
-      position:absolute;
-      width:300px;
-      height:300px;
-      background:var(--primary);
-      opacity:.12;
-      filter:blur(90px);
-      z-index:-1;
+    .blob {
+      position: absolute;
+      width: 300px;
+      height: 300px;
+      background: var(--primary);
+      opacity: .12;
+      filter: blur(90px);
+      z-index: -1;
     }
   </style>
 </head>
@@ -133,18 +134,18 @@
         </h1>
 
         <p class="text-lg text-gray-600 leading-relaxed max-w-xl mb-8">
-          Fashion, beauty, and tech-focused UGC creator helping brands build trust through relatable and engaging content.
+          Fashion, beauty, and tech-focused UGC creator helping brands build trust through relatable and engaging
+          content.
         </p>
 
         <div class="flex flex-wrap gap-4 mb-10">
 
-          <a href="#contact"
-             class="btn-primary px-8 py-4 font-semibold">
+          <a href="#contact" class="btn-primary px-8 py-4 font-semibold">
             Work With Me
           </a>
 
           <a href="#portfolio"
-             class="border border-gray-300 px-8 py-4 rounded-[12px] font-semibold hover:border-pink-400 hover:text-pink-500 transition">
+            class="border border-gray-300 px-8 py-4 rounded-[12px] font-semibold hover:border-pink-400 hover:text-pink-500 transition">
             View Portfolio
           </a>
 
@@ -174,21 +175,24 @@
 
         <div class="card p-4 shadow-2xl">
 
-          <!-- PLACEHOLDER IMAGE -->
-          <div class="aspect-[4/5] rounded-[12px] bg-gradient-to-br from-pink-100 to-gray-100 flex items-center justify-center overflow-hidden">
+          <!-- CREATOR IMAGE -->
+          <div class="aspect-[4/5] rounded-[12px] overflow-hidden relative">
 
-            <!-- REPLACE THIS -->
-            <div class="text-center px-8">
+            <img src="JUDITH.jpg" alt="Judith Castro" class="w-full h-full object-cover" />
 
-              <div class="w-24 h-24 rounded-full bg-pink-300 mx-auto mb-6"></div>
+            <!-- OPTIONAL OVERLAY -->
+            <div class="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
 
-              <p class="font-bold text-2xl text-gray-700">
-                Creator Photo Placeholder
+            <!-- OPTIONAL LABEL -->
+            <div class="absolute bottom-6 left-6">
+
+              <p class="text-white text-sm tracking-[0.2em] uppercase">
+                UGC Creator
               </p>
 
-              <p class="text-gray-500 mt-2">
-                Replace with client branding image
-              </p>
+              <h3 class="text-white text-2xl font-black">
+                Judith Castro
+              </h3>
 
             </div>
 
@@ -226,7 +230,8 @@
           </p>
 
           <p class="text-gray-600 leading-relaxed">
-            I create relatable short-form content designed to feel organic while driving engagement and conversions. My content style combines lifestyle storytelling with clean visuals and modern trends.
+            I create relatable short-form content designed to feel organic while driving engagement and conversions. My
+            content style combines lifestyle storytelling with clean visuals and modern trends.
           </p>
 
         </div>
@@ -675,8 +680,7 @@
               <div>
                 <span class="font-bold">Email:</span>
                 <br>
-                <a href="mailto:castrojudith382@gmail.com"
-                   class="text-pink-500">
+                <a href="mailto:castrojudith382@gmail.com" class="text-pink-500">
                   castrojudith382@gmail.com
                 </a>
               </div>
@@ -684,8 +688,7 @@
               <div>
                 <span class="font-bold">Mobile:</span>
                 <br>
-                <a href="tel:09059481227"
-                   class="text-pink-500">
+                <a href="tel:09059481227" class="text-pink-500">
                   09059481227
                 </a>
               </div>
@@ -699,20 +702,16 @@
 
             <form class="space-y-5">
 
-              <input type="text"
-                     placeholder="Your Name"
-                     class="w-full border border-gray-200 rounded-[12px] px-5 py-4 outline-none focus:border-pink-400">
+              <input type="text" placeholder="Your Name"
+                class="w-full border border-gray-200 rounded-[12px] px-5 py-4 outline-none focus:border-pink-400">
 
-              <input type="email"
-                     placeholder="Your Email"
-                     class="w-full border border-gray-200 rounded-[12px] px-5 py-4 outline-none focus:border-pink-400">
+              <input type="email" placeholder="Your Email"
+                class="w-full border border-gray-200 rounded-[12px] px-5 py-4 outline-none focus:border-pink-400">
 
-              <textarea rows="5"
-                        placeholder="Your Message"
-                        class="w-full border border-gray-200 rounded-[12px] px-5 py-4 outline-none focus:border-pink-400"></textarea>
+              <textarea rows="5" placeholder="Your Message"
+                class="w-full border border-gray-200 rounded-[12px] px-5 py-4 outline-none focus:border-pink-400"></textarea>
 
-              <button type="submit"
-                      class="btn-primary px-8 py-4 font-semibold w-full">
+              <button type="submit" class="btn-primary px-8 py-4 font-semibold w-full">
                 Send Inquiry
               </button>
 
@@ -748,21 +747,18 @@
       <!-- SOCIALS -->
       <div class="flex gap-4 text-sm font-semibold">
 
-        <a href="https://www.tiktok.com/@judithcastro_27?_r=1&_t=ZS-96ftd6jGUqo"
-           target="_blank"
-           class="hover:text-pink-500">
+        <a href="https://www.tiktok.com/@judithcastro_27?_r=1&_t=ZS-96ftd6jGUqo" target="_blank"
+          class="hover:text-pink-500">
           TikTok
         </a>
 
-        <a href="https://www.instagram.com/iamjudithcastro?igsh=MTM2czhwM20xODNl&utm_source=qr"
-           target="_blank"
-           class="hover:text-pink-500">
+        <a href="https://www.instagram.com/iamjudithcastro?igsh=MTM2czhwM20xODNl&utm_source=qr" target="_blank"
+          class="hover:text-pink-500">
           Instagram
         </a>
 
-        <a href="https://www.facebook.com/share/17ncpeEXmH/?mibextid=wwXIfr"
-           target="_blank"
-           class="hover:text-pink-500">
+        <a href="https://www.facebook.com/share/17ncpeEXmH/?mibextid=wwXIfr" target="_blank"
+          class="hover:text-pink-500">
           Facebook
         </a>
 
@@ -782,4 +778,5 @@
   </script>
 
 </body>
+
 </html>

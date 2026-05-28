@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Judith Castro | UGC Creator Portfolio</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <style>
+    :root{
+      --primary:#ec4899;
+      --secondary:#111827;
+      --radius:12px;
+    }
+
+    html{
+      scroll-behavior:smooth;
+    }
+
+    body{
+      font-family: monospace;
+      background:#fff;
+      color:#111827;
+    }
+
+    .glass{
+      background: rgba(255,255,255,0.65);
+      backdrop-filter: blur(12px);
+    }
+
+    .gradient-text{
+      background: linear-gradient(90deg,var(--primary),#f472b6);
+      -webkit-background-clip:text;
+      -webkit-text-fill-color:transparent;
+    }
+
+    .section-title{
+      font-size:2rem;
+      font-weight:700;
+      margin-bottom:1rem;
+      color:var(--secondary);
+    }
+
+    .btn-primary{
+      background:var(--primary);
+      color:white;
+      border-radius:var(--radius);
+      transition:.3s ease;
+    }
+
+    .btn-primary:hover{
+      transform:translateY(-2px);
+      opacity:.92;
+    }
+
+    .card{
+      border-radius:var(--radius);
+      background:white;
+      border:1px solid #f3f4f6;
+      transition:.3s ease;
+    }
+
+    .card:hover{
+      transform:translateY(-5px);
+      box-shadow:0 10px 30px rgba(0,0,0,0.08);
+    }
+
+    .blob{
+      position:absolute;
+      width:300px;
+      height:300px;
+      background:var(--primary);
+      opacity:.12;
+      filter:blur(90px);
+      z-index:-1;
+    }
+  </style>
+</head>
+
+<body class="overflow-x-hidden">
+
+  <!-- BACKGROUND BLOBS -->
+  <div class="blob top-0 left-0"></div>
+  <div class="blob bottom-0 right-0"></div>
+
+  <!-- NAVBAR -->
+  <header class="sticky top-0 z-50 glass border-b border-pink-100">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+
+      <div>
+        <h1 class="text-xl font-bold gradient-text">
+          Judith Castro
+        </h1>
+      </div>
+
+      <nav class="hidden md:flex gap-6 text-sm font-semibold">
+        <a href="#about" class="hover:text-pink-500">About</a>
+        <a href="#portfolio" class="hover:text-pink-500">Portfolio</a>
+        <a href="#services" class="hover:text-pink-500">Services</a>
+        <a href="#rates" class="hover:text-pink-500">Rates</a>
+        <a href="#brands" class="hover:text-pink-500">Brands</a>
+        <a href="#contact" class="hover:text-pink-500">Contact</a>
+      </nav>
+
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="relative min-h-screen flex items-center">
+
+    <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center">
+
+      <!-- LEFT -->
+      <div>
+
+        <p class="uppercase tracking-[0.3em] text-pink-500 text-sm mb-4">
+          UGC Creator • Affiliate Marketer
+        </p>
+
+        <h1 class="text-5xl lg:text-7xl font-black leading-tight mb-6">
+          Creating
+          <span class="gradient-text">
+            authentic
+          </span>
+          content that converts.
+        </h1>
+
+        <p class="text-lg text-gray-600 leading-relaxed max-w-xl mb-8">
+          Fashion, beauty, and tech-focused UGC creator helping brands build trust through relatable and engaging content.
+        </p>
+
+        <div class="flex flex-wrap gap-4 mb-10">
+
+          <a href="#contact"
+             class="btn-primary px-8 py-4 font-semibold">
+            Work With Me
+          </a>
+
+          <a href="#portfolio"
+             class="border border-gray-300 px-8 py-4 rounded-[12px] font-semibold hover:border-pink-400 hover:text-pink-500 transition">
+            View Portfolio
+          </a>
+
+        </div>
+
+        <!-- NICHE TAGS -->
+        <div class="flex flex-wrap gap-3">
+
+          <span class="bg-pink-100 text-pink-600 px-4 py-2 rounded-full text-sm font-semibold">
+            Fashion
+          </span>
+
+          <span class="bg-gray-100 text-gray-700 px-4 py-2 rounded-full text-sm font-semibold">
+            Beauty
+          </span>
+
+          <span class="bg-pink-100 text-pink-600 px-4 py-2 rounded-full text-sm font-semibold">
+            Technology
+          </span>
+
+        </div>
+
+      </div>
+
+      <!-- RIGHT -->
+      <div class="relative">
+
+        <div class="card p-4 shadow-2xl">
+
+          <!-- PLACEHOLDER IMAGE -->
+          <div class="aspect-[4/5] rounded-[12px] bg-gradient-to-br from-pink-100 to-gray-100 flex items-center justify-center overflow-hidden">
+
+            <!-- REPLACE THIS -->
+            <div class="text-center px-8">
+
+              <div class="w-24 h-24 rounded-full bg-pink-300 mx-auto mb-6"></div>
+
+              <p class="font-bold text-2xl text-gray-700">
+                Creator Photo Placeholder
+              </p>
+
+              <p class="text-gray-500 mt-2">
+                Replace with client branding image
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="py-28">
+
+    <div class="max-w-6xl mx-auto px-6">
+
+      <div class="grid lg:grid-cols-2 gap-16 items-center">
+
+        <div>
+
+          <p class="text-pink-500 font-bold mb-3">
+            ABOUT ME
+          </p>
+
+          <h2 class="section-title">
+            Real products.
+            Real experiences.
+            Real influence.
+          </h2>
+
+          <p class="text-gray-600 leading-relaxed mb-6">
+            Affiliate since 2022 ✨ Sharing products I really use 🛒
+          </p>
+
+          <p class="text-gray-600 leading-relaxed">
+            I create relatable short-form content designed to feel organic while driving engagement and conversions. My content style combines lifestyle storytelling with clean visuals and modern trends.
+          </p>
+
+        </div>
+
+        <!-- STATS -->
+        <div class="grid grid-cols-2 gap-6">
+
+          <div class="card p-8">
+            <h3 class="text-4xl font-black text-pink-500">
+              2022
+            </h3>
+            <p class="text-gray-600 mt-2">
+              Started Affiliate Journey
+            </p>
+          </div>
+
+          <div class="card p-8">
+            <h3 class="text-4xl font-black text-pink-500">
+              3+
+            </h3>
+            <p class="text-gray-600 mt-2">
+              Content Niches
+            </p>
+          </div>
+
+          <div class="card p-8">
+            <h3 class="text-4xl font-black text-pink-500">
+              UGC
+            </h3>
+            <p class="text-gray-600 mt-2">
+              Short-form Specialist
+            </p>
+          </div>
+
+          <div class="card p-8">
+            <h3 class="text-4xl font-black text-pink-500">
+              TikTok
+            </h3>
+            <p class="text-gray-600 mt-2">
+              Content Platform
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- PORTFOLIO -->
+  <section id="portfolio" class="py-28 bg-gray-50">
+
+    <div class="max-w-7xl mx-auto px-6">
+
+      <div class="text-center mb-16">
+
+        <p class="text-pink-500 font-bold mb-3">
+          PORTFOLIO
+        </p>
+
+        <h2 class="section-title">
+          Featured Content Samples
+        </h2>
+
+        <p class="text-gray-600 max-w-2xl mx-auto">
+          Replace these placeholders with actual video thumbnails, embeds, screenshots, or campaign creatives.
+        </p>
+
+      </div>
+
+      <!-- GRID -->
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        <!-- ITEM -->
+        <div class="card overflow-hidden">
+
+          <div class="aspect-video bg-gradient-to-br from-pink-100 to-white flex items-center justify-center">
+            <p class="text-gray-500 font-semibold">
+              Video Placeholder
+            </p>
+          </div>
+
+          <div class="p-6">
+            <h3 class="font-bold text-xl mb-2">
+              Beauty Product Review
+            </h3>
+
+            <p class="text-gray-600 text-sm">
+              TikTok-style organic review content optimized for engagement.
+            </p>
+          </div>
+
+        </div>
+
+        <!-- ITEM -->
+        <div class="card overflow-hidden">
+
+          <div class="aspect-video bg-gradient-to-br from-gray-100 to-pink-50 flex items-center justify-center">
+            <p class="text-gray-500 font-semibold">
+              Content Placeholder
+            </p>
+          </div>
+
+          <div class="p-6">
+            <h3 class="font-bold text-xl mb-2">
+              Fashion Try-On Content
+            </h3>
+
+            <p class="text-gray-600 text-sm">
+              Lifestyle-driven short-form content with trendy editing.
+            </p>
+          </div>
+
+        </div>
+
+        <!-- ITEM -->
+        <div class="card overflow-hidden">
+
+          <div class="aspect-video bg-gradient-to-br from-pink-100 to-white flex items-center justify-center">
+            <p class="text-gray-500 font-semibold">
+              Tech Demo Placeholder
+            </p>
+          </div>
+
+          <div class="p-6">
+            <h3 class="font-bold text-xl mb-2">
+              Tech Product Demo
+            </h3>
+
+            <p class="text-gray-600 text-sm">
+              Product-focused storytelling with authentic usage showcase.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="py-28">
+
+    <div class="max-w-6xl mx-auto px-6">
+
+      <div class="text-center mb-16">
+
+        <p class="text-pink-500 font-bold mb-3">
+          SERVICES
+        </p>
+
+        <h2 class="section-title">
+          What I Offer
+        </h2>
+
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+        <div class="card p-8">
+          <h3 class="font-bold text-xl mb-4">
+            UGC Videos
+          </h3>
+
+          <p class="text-gray-600 text-sm">
+            Authentic short-form content for TikTok, Reels, and ads.
+          </p>
+        </div>
+
+        <div class="card p-8">
+          <h3 class="font-bold text-xl mb-4">
+            Product Reviews
+          </h3>
+
+          <p class="text-gray-600 text-sm">
+            Honest and relatable product experiences that build trust.
+          </p>
+        </div>
+
+        <div class="card p-8">
+          <h3 class="font-bold text-xl mb-4">
+            Affiliate Content
+          </h3>
+
+          <p class="text-gray-600 text-sm">
+            Conversion-focused content for affiliate campaigns.
+          </p>
+        </div>
+
+        <div class="card p-8">
+          <h3 class="font-bold text-xl mb-4">
+            Brand Collaborations
+          </h3>
+
+          <p class="text-gray-600 text-sm">
+            Sponsored content aligned with your brand identity.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- RATES -->
+  <section id="rates" class="py-28 bg-gray-50">
+
+    <div class="max-w-6xl mx-auto px-6">
+
+      <div class="text-center mb-16">
+
+        <p class="text-pink-500 font-bold mb-3">
+          RATES
+        </p>
+
+        <h2 class="section-title">
+          Starter Packages
+        </h2>
+
+        <p class="text-gray-600">
+          Replace pricing below with actual client rates.
+        </p>
+
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+
+        <!-- PACKAGE -->
+        <div class="card p-10">
+
+          <h3 class="font-bold text-2xl mb-4">
+            Basic
+          </h3>
+
+          <div class="text-4xl font-black text-pink-500 mb-6">
+            ₱0
+          </div>
+
+          <ul class="space-y-3 text-gray-600 text-sm mb-8">
+            <li>• 1 UGC Video</li>
+            <li>• Vertical Format</li>
+            <li>• Organic Style Editing</li>
+          </ul>
+
+          <button class="btn-primary px-6 py-3 w-full font-semibold">
+            Inquiry
+          </button>
+
+        </div>
+
+        <!-- PACKAGE -->
+        <div class="card p-10 border-2 border-pink-400 relative">
+
+          <div class="absolute top-4 right-4 bg-pink-500 text-white text-xs px-3 py-1 rounded-full">
+            POPULAR
+          </div>
+
+          <h3 class="font-bold text-2xl mb-4">
+            Standard
+          </h3>
+
+          <div class="text-4xl font-black text-pink-500 mb-6">
+            ₱0
+          </div>
+
+          <ul class="space-y-3 text-gray-600 text-sm mb-8">
+            <li>• 3 UGC Videos</li>
+            <li>• Hook + CTA</li>
+            <li>• Product Showcases</li>
+          </ul>
+
+          <button class="btn-primary px-6 py-3 w-full font-semibold">
+            Inquiry
+          </button>
+
+        </div>
+
+        <!-- PACKAGE -->
+        <div class="card p-10">
+
+          <h3 class="font-bold text-2xl mb-4">
+            Premium
+          </h3>
+
+          <div class="text-4xl font-black text-pink-500 mb-6">
+            ₱0
+          </div>
+
+          <ul class="space-y-3 text-gray-600 text-sm mb-8">
+            <li>• Full Campaign Bundle</li>
+            <li>• Multiple Revisions</li>
+            <li>• Priority Delivery</li>
+          </ul>
+
+          <button class="btn-primary px-6 py-3 w-full font-semibold">
+            Inquiry
+          </button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="py-28">
+
+    <div class="max-w-6xl mx-auto px-6">
+
+      <div class="text-center mb-16">
+
+        <p class="text-pink-500 font-bold mb-3">
+          TESTIMONIALS
+        </p>
+
+        <h2 class="section-title">
+          Client Feedback
+        </h2>
+
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+
+        <div class="card p-8">
+          <p class="text-gray-600 italic mb-6">
+            “Placeholder testimonial for future client feedback.”
+          </p>
+
+          <h4 class="font-bold">
+            Brand Name
+          </h4>
+        </div>
+
+        <div class="card p-8">
+          <p class="text-gray-600 italic mb-6">
+            “Placeholder testimonial for future collaboration reviews.”
+          </p>
+
+          <h4 class="font-bold">
+            Brand Name
+          </h4>
+        </div>
+
+        <div class="card p-8">
+          <p class="text-gray-600 italic mb-6">
+            “Placeholder testimonial for creator partnerships.”
+          </p>
+
+          <h4 class="font-bold">
+            Brand Name
+          </h4>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- BRANDS -->
+  <section id="brands" class="py-28 bg-gray-50">
+
+    <div class="max-w-6xl mx-auto px-6">
+
+      <div class="text-center mb-16">
+
+        <p class="text-pink-500 font-bold mb-3">
+          BRANDS
+        </p>
+
+        <h2 class="section-title">
+          Previous & Future Collaborations
+        </h2>
+
+        <p class="text-gray-600">
+          Replace placeholders with actual brand logos or partnerships.
+        </p>
+
+      </div>
+
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+
+        <div class="card h-32 flex items-center justify-center">
+          <span class="text-gray-400 font-bold">
+            BRAND LOGO
+          </span>
+        </div>
+
+        <div class="card h-32 flex items-center justify-center">
+          <span class="text-gray-400 font-bold">
+            BRAND LOGO
+          </span>
+        </div>
+
+        <div class="card h-32 flex items-center justify-center">
+          <span class="text-gray-400 font-bold">
+            BRAND LOGO
+          </span>
+        </div>
+
+        <div class="card h-32 flex items-center justify-center">
+          <span class="text-gray-400 font-bold">
+            BRAND LOGO
+          </span>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="py-28">
+
+    <div class="max-w-5xl mx-auto px-6">
+
+      <div class="card p-10 lg:p-16">
+
+        <div class="grid lg:grid-cols-2 gap-12">
+
+          <!-- LEFT -->
+          <div>
+
+            <p class="text-pink-500 font-bold mb-3">
+              CONTACT
+            </p>
+
+            <h2 class="text-4xl font-black mb-6">
+              Let’s create together.
+            </h2>
+
+            <p class="text-gray-600 mb-8 leading-relaxed">
+              Open for collaborations, UGC campaigns, affiliate partnerships, and brand deals.
+            </p>
+
+            <div class="space-y-4 text-sm">
+
+              <div>
+                <span class="font-bold">Email:</span>
+                <br>
+                <a href="mailto:castrojudith382@gmail.com"
+                   class="text-pink-500">
+                  castrojudith382@gmail.com
+                </a>
+              </div>
+
+              <div>
+                <span class="font-bold">Mobile:</span>
+                <br>
+                <a href="tel:09059481227"
+                   class="text-pink-500">
+                  09059481227
+                </a>
+              </div>
+
+            </div>
+
+          </div>
+
+          <!-- RIGHT -->
+          <div>
+
+            <form class="space-y-5">
+
+              <input type="text"
+                     placeholder="Your Name"
+                     class="w-full border border-gray-200 rounded-[12px] px-5 py-4 outline-none focus:border-pink-400">
+
+              <input type="email"
+                     placeholder="Your Email"
+                     class="w-full border border-gray-200 rounded-[12px] px-5 py-4 outline-none focus:border-pink-400">
+
+              <textarea rows="5"
+                        placeholder="Your Message"
+                        class="w-full border border-gray-200 rounded-[12px] px-5 py-4 outline-none focus:border-pink-400"></textarea>
+
+              <button type="submit"
+                      class="btn-primary px-8 py-4 font-semibold w-full">
+                Send Inquiry
+              </button>
+
+            </form>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-gray-100 py-10">
+
+    <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row gap-6 items-center justify-between">
+
+      <div>
+
+        <h3 class="font-black text-xl gradient-text">
+          Judith Castro
+        </h3>
+
+        <p class="text-sm text-gray-500 mt-2">
+          UGC Creator • Affiliate Marketer
+        </p>
+
+      </div>
+
+      <!-- SOCIALS -->
+      <div class="flex gap-4 text-sm font-semibold">
+
+        <a href="https://www.tiktok.com/@judithcastro_27?_r=1&_t=ZS-96ftd6jGUqo"
+           target="_blank"
+           class="hover:text-pink-500">
+          TikTok
+        </a>
+
+        <a href="https://www.instagram.com/iamjudithcastro?igsh=MTM2czhwM20xODNl&utm_source=qr"
+           target="_blank"
+           class="hover:text-pink-500">
+          Instagram
+        </a>
+
+        <a href="https://www.facebook.com/share/17ncpeEXmH/?mibextid=wwXIfr"
+           target="_blank"
+           class="hover:text-pink-500">
+          Facebook
+        </a>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+  <!-- OPTIONAL FUTURE JS -->
+  <script>
+
+    // Example future animation hooks
+
+    console.log("Portfolio Loaded");
+
+  </script>
+
+</body>
+</html>
